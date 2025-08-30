@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import FlashDealsSection from "@/components/FlashDealsSection";
-import CategoriesSection from "@/components/CategoriesSection";
+import HealthcareHero from "@/components/HealthcareHero";
+import FindDoctorsSection from "@/components/FindDoctorsSection";
+import BookAppointmentSection from "@/components/BookAppointmentSection";
+import HealthRecordsSection from "@/components/HealthRecordsSection";
 import Footer from "@/components/Footer";
 
 const Homepage = () => {
@@ -9,9 +10,10 @@ const Homepage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HeroSection />
-        <FlashDealsSection />
-        <CategoriesSection />
+        <HealthcareHero />
+        <FindDoctorsSection />
+        <BookAppointmentSection />
+        <HealthRecordsSection />
       </main>
       <Footer />
     </div>

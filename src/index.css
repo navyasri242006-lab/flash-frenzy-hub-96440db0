@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    /* Flash Sale Brand Colors */
-    --primary: 0 100% 65%; /* Energetic Red #FF4444 */
+    /* Healthcare Brand Colors */
+    --primary: 210 100% 50%; /* Professional Blue #0080FF */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 0 100% 75%;
+    --primary-glow: 210 100% 70%;
 
-    --secondary: 20 100% 60%; /* Vibrant Orange #FF6B35 */
+    --secondary: 140 60% 45%; /* Calming Green #4CAF50 */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 0 0% 10%; /* Deep Black */
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 20% 98%; /* Soft Light Blue */
+    --accent-foreground: 210 100% 20%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
@@ -38,16 +38,16 @@ All colors MUST be HSL.
     --input: 0 0% 95%;
     --ring: 0 100% 65%;
 
-    /* Flash Sale Specific */
-    --sale-red: 0 100% 65%;
-    --sale-orange: 20 100% 60%;
-    --urgent-pulse: 0 100% 50%;
-    --discount-bg: 0 100% 95%;
+    /* Healthcare Specific */
+    --medical-blue: 210 100% 50%;
+    --medical-green: 140 60% 45%;
+    --trust-blue: 200 50% 90%;
+    --health-accent: 140 30% 95%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
-    --gradient-deal: linear-gradient(90deg, hsl(var(--sale-red)), hsl(var(--sale-orange)));
-    --gradient-urgent: linear-gradient(45deg, hsl(var(--urgent-pulse)), hsl(var(--primary-glow)));
+    --gradient-medical: linear-gradient(90deg, hsl(var(--medical-blue)), hsl(var(--medical-green)));
+    --gradient-trust: linear-gradient(45deg, hsl(var(--trust-blue)), hsl(var(--health-accent)));
 
     /* Shadows */
     --shadow-deal: 0 8px 25px hsl(var(--primary) / 0.15);
@@ -123,40 +123,36 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Flash Sale Utilities */
+  /* Healthcare Utilities */
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
   
-  .bg-gradient-deal {
-    background: var(--gradient-deal);
+  .bg-gradient-medical {
+    background: var(--gradient-medical);
   }
   
-  .bg-gradient-urgent {
-    background: var(--gradient-urgent);
-  }
-  
-  .shadow-deal {
-    box-shadow: var(--shadow-deal);
+  .bg-gradient-trust {
+    background: var(--gradient-trust);
   }
   
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
   
-  .shadow-urgent {
-    box-shadow: var(--shadow-urgent);
+  .text-medical-blue {
+    color: hsl(var(--medical-blue));
   }
   
-  .text-sale-red {
-    color: hsl(var(--sale-red));
+  .text-medical-green {
+    color: hsl(var(--medical-green));
   }
   
-  .text-sale-orange {
-    color: hsl(var(--sale-orange));
+  .bg-trust-blue {
+    background-color: hsl(var(--trust-blue));
   }
   
-  .bg-discount {
-    background-color: hsl(var(--discount-bg));
+  .bg-health-accent {
+    background-color: hsl(var(--health-accent));
   }
 }
