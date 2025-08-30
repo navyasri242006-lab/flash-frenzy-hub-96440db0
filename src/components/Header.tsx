@@ -12,7 +12,7 @@ const Header = () => {
               <Menu className="h-5 w-5" />
             </Button>
             <div className="font-poppins font-bold text-2xl bg-gradient-hero bg-clip-text text-transparent">
-              HealthCare+
+              FlashDeal
             </div>
           </div>
 
@@ -21,17 +21,14 @@ const Header = () => {
             <a href="#" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#find-doctors" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
-              Find Doctors
+            <a href="#categories" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
+              Categories
             </a>
-            <a href="#book-appointment" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
-              Book Appointment
+            <a href="#flash-deals" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
+              Flash Deals
             </a>
-            <a href="#health-records" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
-              Health Records
-            </a>
-            <a href="#lab-tests" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
-              Lab Tests
+            <a href="#coupons" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
+              Coupons
             </a>
             <a href="#about" className="font-inter font-medium text-foreground hover:text-primary transition-colors">
               About Us
