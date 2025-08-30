@@ -9,34 +9,52 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Flash Sale Brand Colors */
+    --primary: 0 100% 65%; /* Energetic Red #FF4444 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 100% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 20 100% 60%; /* Vibrant Orange #FF6B35 */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 0 0% 10%; /* Deep Black */
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 0 100% 65%;
 
-    --radius: 0.5rem;
+    /* Flash Sale Specific */
+    --sale-red: 0 100% 65%;
+    --sale-orange: 20 100% 60%;
+    --urgent-pulse: 0 100% 50%;
+    --discount-bg: 0 100% 95%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-deal: linear-gradient(90deg, hsl(var(--sale-red)), hsl(var(--sale-orange)));
+    --gradient-urgent: linear-gradient(45deg, hsl(var(--urgent-pulse)), hsl(var(--primary-glow)));
+
+    /* Shadows */
+    --shadow-deal: 0 8px 25px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 15px hsl(0 0% 0% / 0.1);
+    --shadow-urgent: 0 0 20px hsl(var(--primary) / 0.4);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +119,44 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Flash Sale Utilities */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-deal {
+    background: var(--gradient-deal);
+  }
+  
+  .bg-gradient-urgent {
+    background: var(--gradient-urgent);
+  }
+  
+  .shadow-deal {
+    box-shadow: var(--shadow-deal);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-urgent {
+    box-shadow: var(--shadow-urgent);
+  }
+  
+  .text-sale-red {
+    color: hsl(var(--sale-red));
+  }
+  
+  .text-sale-orange {
+    color: hsl(var(--sale-orange));
+  }
+  
+  .bg-discount {
+    background-color: hsl(var(--discount-bg));
   }
 }
