@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h3 className="font-poppins font-bold text-2xl">
-              Never Miss a Deal!
+              Stay Healthy, Stay Informed!
             </h3>
             <p className="font-inter text-accent-foreground/80">
-              Subscribe to get notified about flash sales and exclusive offers
+              Subscribe to get health tips and appointment reminders
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input
@@ -35,10 +35,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="font-poppins font-bold text-2xl bg-gradient-hero bg-clip-text text-transparent">
-              FlashDeal
+              HealthCare+
             </div>
             <p className="font-inter text-sm text-accent-foreground/80">
-              Your ultimate destination for incredible flash sale deals. Save big on thousands of products daily.
+              Your trusted healthcare partner. Connect with qualified doctors and manage your health records securely.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="text-accent-foreground/60 hover:text-accent-foreground">
@@ -56,11 +56,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <div className="space-y-4">
-            <h4 className="font-poppins font-semibold text-lg">Quick Links</h4>
+            <h4 className="font-poppins font-semibold text-lg">Services</h4>
             <div className="space-y-2">
-              {["About Us", "Contact", "FAQ", "Shipping Info", "Returns", "Privacy Policy"].map((link) => (
+              {["Find Doctors", "Book Appointment", "Health Records", "Lab Tests", "Emergency Care", "Telemedicine"].map((link) => (
                 <a
                   key={link}
                   href="#"
@@ -72,11 +72,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Categories */}
+          {/* Specialties */}
           <div className="space-y-4">
-            <h4 className="font-poppins font-semibold text-lg">Categories</h4>
+            <h4 className="font-poppins font-semibold text-lg">Specialties</h4>
             <div className="space-y-2">
-              {["Fashion", "Electronics", "Home & Garden", "Sports", "Beauty", "Automotive"].map((category) => (
+              {["Cardiology", "Neurology", "Orthopedics", "Dermatology", "Pediatrics", "General Medicine"].map((category) => (
                 <a
                   key={category}
                   href="#"
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* App Download & Support */}
+          {/* Mobile App & Support */}
           <div className="space-y-4">
             <h4 className="font-poppins font-semibold text-lg">Get Our App</h4>
             <div className="space-y-3">
@@ -98,11 +98,11 @@ const Footer = () => {
               </Button>
             </div>
             <div className="pt-4">
-              <h5 className="font-inter font-medium text-sm mb-3">Customer Support</h5>
+              <h5 className="font-inter font-medium text-sm mb-3">Patient Support</h5>
               <div className="space-y-2 text-sm text-accent-foreground/80">
-                <div>📧 support@flashdeal.com</div>
-                <div>📞 1-800-FLASH-DEAL</div>
-                <div>💬 24/7 Live Chat</div>
+                <div>📧 support@healthcare.com</div>
+                <div>📞 1-800-HEALTH-CARE</div>
+                <div>🚨 Emergency: 911</div>
               </div>
             </div>
           </div>
@@ -115,15 +115,15 @@ const Footer = () => {
           <div className="flex flex-wrap items-center justify-center gap-8 text-accent-foreground/60">
             <div className="flex items-center gap-2">
               <Shield className="h-5 w-5" />
-              <span className="font-inter text-sm">Secure Payments</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Truck className="h-5 w-5" />
-              <span className="font-inter text-sm">Free Shipping</span>
+              <span className="font-inter text-sm">HIPAA Compliant</span>
             </div>
             <div className="flex items-center gap-2">
               <CreditCard className="h-5 w-5" />
-              <span className="font-inter text-sm">Easy Returns</span>
+              <span className="font-inter text-sm">Insurance Accepted</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Truck className="h-5 w-5" />
+              <span className="font-inter text-sm">24/7 Emergency</span>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ const Footer = () => {
       <div className="border-t border-accent-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="text-center text-sm text-accent-foreground/60 font-inter">
-            © 2024 FlashDeal. All rights reserved. Built with ❤️ for deal hunters.
+            © 2024 HealthCare+. All rights reserved. Built with ❤️ for better health.
           </div>
         </div>
       </div>
